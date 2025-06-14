@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 13:45:34 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/06/14 10:55:34 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/06/14 11:57:37 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ int main()
 	v.push_back(20);
 
 	try {
-		sp.addNumber(v.begin(), v.end()); // Peut dépasser les 20
+		sp.addNumber(v.begin(), v.end());
 	} catch (std::exception &e) {
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	sp.printContents();
+	// sp.printContents();
 	
 	v.push_back(51);
 	v.push_back(11);
@@ -48,11 +48,11 @@ int main()
 	v.push_back(32);
 	v.push_back(22);
 	try {
-		sp.addNumber(v.begin(), v.end()); // Peut dépasser les 20
+		sp.addNumber(v.begin(), v.end());
 	} catch (std::exception &e) {
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
-	sp.printContents();
+	// sp.printContents();
 	std::cout << "Shortest: " << sp.shortestSpan() << std::endl;
 	std::cout << "Longest: " << sp.longestSpan() << std::endl;	
 	v.push_back(53);
@@ -60,14 +60,14 @@ int main()
 	v.push_back(33);
 	v.push_back(23);
 	try {
-		sp.addNumber(v.begin(), v.end()); // Peut dépasser les 20
+		sp.addNumber(v.begin(), v.end());
 	} catch (std::exception &e) {
 		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 
 	std::cout << "Shortest: " << sp.shortestSpan() << std::endl;
 	std::cout << "Longest: " << sp.longestSpan() << std::endl;
-	sp.printContents();
+	// sp.printContents();
 
 	std::list<int> lst;
 	lst.push_back(100);
@@ -82,7 +82,7 @@ int main()
 	int arr[] = {5, 15, 25};
 	Span sp3(5);
 	sp3.addNumber(arr, arr + 3);
-	sp3.printContents();
+	// sp3.printContents();
 	std::cout << sp3.shortestSpan() << std::endl;
 	std::cout << sp3.longestSpan() << std::endl;
 }

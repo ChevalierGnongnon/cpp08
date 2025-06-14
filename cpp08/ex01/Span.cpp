@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 13:46:30 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/06/14 10:58:59 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/06/14 11:58:10 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,8 @@ const char*Span::notEnoughNumbersException::what() const throw(){
 	return ("Error ! not Enough numbers");
 }
 
-void Span::printContents() const {
-	for (std::multiset<int>::const_iterator it = contain.begin(); it != contain.end(); ++it)
-		std::cout << *it << std::endl;
-}
+// void Span::printContents() const {
+// 	for (std::multiset<int>::const_iterator it = contain.begin(); it != contain.end(); ++it)
+// 		std::cout << *it << std::endl;
+// }
 
