@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 13:46:30 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/06/12 16:06:30 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/06/14 10:33:36 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int Span::shortestSpan()const{
 int Span::longestSpan()const{
 	if (contain.size() < 2)
 		throw notEnoughNumbersException();
-	return(*contain.rbegin()- *contain.begin());
+	return(*contain.rbegin() - *contain.begin());
 }
 
 const char* Span::tooManyNumbersException::what() const throw(){
@@ -74,4 +74,12 @@ const char* Span::tooManyNumbersException::what() const throw(){
 
 const char*Span::notEnoughNumbersException::what() const throw(){
 	return ("Error ! not Enough numbers");
+}
+
+template <typename Iterator>
+void Span::addNumber(Iterator begin, Iterator end){
+	unsigned int check = std::distance(begin, end);
+	if ((check + contain.size()) > max)
+		throw tooManyNumbersException();
+	contain.insert(begin, end);
 }

@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 14:28:43 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/06/12 13:12:08 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/06/14 10:23:58 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,7 @@ class Span{
 			public:
 				virtual const char* what() const throw();
 		};
+		
+		template <typename Iterator>
+		void addNumber(Iterator begin, Iterator end);
 };
