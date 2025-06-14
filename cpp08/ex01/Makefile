@@ -6,13 +6,14 @@
 #    By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 11:00:06 by chhoflac          #+#    #+#              #
-#    Updated: 2025/05/27 13:32:34 by chhoflac         ###   ########.fr        #
+#    Updated: 2025/06/14 10:56:41 by chhoflac         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = templates
 
-SOURCES = main.cpp
+SOURCES = main.cpp \
+		Span.cpp
 		
 OBJS = $(SOURCES:.cpp=.o)
 

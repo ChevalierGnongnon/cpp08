@@ -6,7 +6,7 @@
 /*   By: chhoflac <chhoflac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 14:28:43 by chhoflac          #+#    #+#             */
-/*   Updated: 2025/06/14 10:23:58 by chhoflac         ###   ########.fr       */
+/*   Updated: 2025/06/14 11:11:40 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,8 @@ class Span{
 		
 		template <typename Iterator>
 		void addNumber(Iterator begin, Iterator end);
+
+		void printContents() const;
 };
+
+#include "Span.tpp"
